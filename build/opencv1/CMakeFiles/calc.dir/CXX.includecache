@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nejack/ros/src/opencv1/calc.cpp
+ros/ros.h
+-
+geometry_msgs/Twist.h
+-
+std_msgs/Float32MultiArray.h
+-
+std_msgs/MultiArrayDimension.h
+-
+turtlesim/Pose.h
+-
+math.h
+-
+iostream
+-
+

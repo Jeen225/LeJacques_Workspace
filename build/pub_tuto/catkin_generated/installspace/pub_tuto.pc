@@ -1,0 +1,8 @@
+prefix=/home/nejack/ros/install
+
+Name: pub_tuto
+Description: Description of pub_tuto
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/nejack/ros/install/lib 
+Requires: 

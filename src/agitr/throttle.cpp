@@ -1,0 +1,13 @@
+#include <ros/ros.h>
+
+int main(int argc, char **argv){
+	ros::init(argc,argv,"log_once");
+	ros::NodeHandle nh;
+	while(ros::ok()){
+		ROS_DEBUG_STREAM_THROTTLE(0.1,"THIS APPEARS EVERY 0.1 SECONDS. ");
+		ROS_INFO_STREAM_THROTTLE(0.3,"THIS APPEARS EVERY 0.3 SECONDS. ");
+		ROS_WARN_STREAM_THROTTLE(0.5,"THIS APPEARS EVERY 0.5 SECONDS. ");
+		ROS_ERROR_STREAM_THROTTLE(1.0,"THIS APPEARS EVERY 1.0 SECONDS. ");
+		ROS_FATAL_STREAM_THROTTLE(2.0,"THIS APPEARS EVERY 2.0 SECONDS. ");
+	}
+}

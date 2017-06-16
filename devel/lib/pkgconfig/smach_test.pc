@@ -1,0 +1,8 @@
+prefix=/home/nejack/ros/devel
+
+Name: smach_test
+Description: Description of smach_test
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/nejack/ros/devel/lib 
+Requires: 

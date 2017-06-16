@@ -1,0 +1,28 @@
+<launch>
+	<node
+		pkg="turtlesim"
+		type="turtlesim_node"
+		name="turtlesim_node"
+		ns="sim1"
+	/>	
+	<node
+		pkg="pub_tuto"
+		type="pubvel"
+		name="velocity_publisher"
+		ns="sim1"
+	/>
+	<node
+		pkg="turtlesim"
+		type="turtlesim_node"
+		name="turtlesim_node"
+		ns="sim2"
+	/>
+	<node
+		pkg="pub_tuto"
+		type="pubvel"
+		name="velocity_publisher"
+		ns="sim2"
+	/>
+</launch>
+
+

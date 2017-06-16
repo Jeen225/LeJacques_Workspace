@@ -1,0 +1,22 @@
+<launch>
+	<node
+		pkg="turtlesim"
+		type="turtlesim_node"
+		name="turtlesim"
+		respawn="true"
+	/>	
+	<node
+		pkg="opencv1"
+		type="calc"
+		name="Velocities_calculator"
+		required="true"
+	/>
+	<node
+		pkg="opencv1"
+		type="open_test"
+		name="hand_tracker"
+		required="true"
+	/>
+</launch>
+
+

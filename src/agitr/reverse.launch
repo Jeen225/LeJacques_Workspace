@@ -1,0 +1,30 @@
+<launch>
+	<node
+		pkg="turtlesim"
+		type="turtlesim_node"
+		name="turtlesim"
+	>
+	<remap
+		from ="turtle1/cmd_vel"
+		to="turtle1/cmd_vel_reversed"
+	/>	
+	</node>
+	<node
+		pkg="pub_tuto"
+		type="pubvel"
+		name="velocity_publisher"
+	/>
+	<node
+		pkg="agitr"
+		type="reverse_cmd_vel"
+		name="reverse_velocity"
+	/>
+	<node
+		pkg="sub_tuto"
+		type="subpose"
+		name="pose_subscriber"
+		output="screen"
+	/>
+</launch>
+
+

@@ -1,0 +1,8 @@
+prefix=/home/nejack/ros/devel
+
+Name: sub_tuto
+Description: Description of sub_tuto
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/nejack/ros/devel/lib 
+Requires: 
