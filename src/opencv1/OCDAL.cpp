@@ -22,7 +22,8 @@ int V_MAX = 226;
 int E_FAC = 8;
 int D_FAC = 12;
 Mat color;
-ros::Publisher pubLocation;
+ros::Publisher msg;
+vector<double> pubLocation;
 
 void calibrationBars(int, void*) {};
 
@@ -72,6 +73,7 @@ int calculateDist(Mat &color,Mat &thresh) {
 		greatest_x = *max_element(points_x.begin(), points_x.end());
 		lowest_x = *min_element(points_x.begin(), points_x.end());
 		center = accumulate(points_x.begin(), points_x.end(), 0)/points.size();
+		pubLocation.push_back(center);
 		//drawContours(color, hull, contour_index, Scalar(0, 255, 0), 3, 8, vector<Vec4i>(), 0, Point());
 		drawContours(color, contours, contour_index, Scalar(0, 255, 255), 2, 8, vector<Vec4i>(), 1, Point());
 	}
@@ -81,7 +83,7 @@ int calculateDist(Mat &color,Mat &thresh) {
 int main(int argc, char **argv){
 	ros::init(argc, argv,"OCDAL");
 	ros::NodeHandle nh;
-	pubLocation=nh.advertise<std_msgs::Float32MultiArray>("std_msgs/Float32MultiArray", 1000);
+	msg=nh.advertise<std_msgs::Float32MultiArray>("std_msgs/Float32MultiArray", 1000);
 	double c,r;
 	std::ostringstream disTxt;
 	int pixelWidth;
@@ -109,9 +111,11 @@ int main(int argc, char **argv){
 		calibrated = image_Calib(color);
 		pixelWidth = calculateDist(color, calibrated);
 		dist = 567*101.6/(10*pixelWidth);
+		pubLocation.push_back(dist);
 		imshow("Original", color);
-		ROS_INFO_STREAM(dist);
-		waitKey(30);
+		//ROS_INFO_STREAM(dist);
+		waitKey(0);
+		ros::Rate rate(10);
 		ros::spinOnce();
 	}
 	return 0;
