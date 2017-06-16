@@ -22,6 +22,8 @@ int V_MAX = 226;
 int E_FAC = 8;
 int D_FAC = 12;
 Mat color;
+ros::Publisher pubLocation;
+
 void calibrationBars(int, void*) {};
 
 Mat image_Calib(Mat &img) {
@@ -41,7 +43,7 @@ int calculateDist(Mat &color,Mat &thresh) {
 	vector<Vec4i> hierarchy;
 	vector<int> points_x,points_y;
 	vector<double>areas;
-	Point center;
+	int center;
 	double greatest_x,lowest_x;
 	vector<vector<Point> > contours;
 	findContours(thresh, contours, hierarchy, RETR_TREE, CHAIN_APPROX_SIMPLE, Point(0, 0));
@@ -69,7 +71,7 @@ int calculateDist(Mat &color,Mat &thresh) {
 		} 
 		greatest_x = *max_element(points_x.begin(), points_x.end());
 		lowest_x = *min_element(points_x.begin(), points_x.end());
-		center = Point(accumulate(points_x.begin(), points_x.end(), 0)/points.size(),accumulate(points_y.begin(), points_y.end(), 0)/points.size());
+		center = accumulate(points_x.begin(), points_x.end(), 0)/points.size();
 		//drawContours(color, hull, contour_index, Scalar(0, 255, 0), 3, 8, vector<Vec4i>(), 0, Point());
 		drawContours(color, contours, contour_index, Scalar(0, 255, 255), 2, 8, vector<Vec4i>(), 1, Point());
 	}
@@ -79,6 +81,7 @@ int calculateDist(Mat &color,Mat &thresh) {
 int main(int argc, char **argv){
 	ros::init(argc, argv,"OCDAL");
 	ros::NodeHandle nh;
+	pubLocation=nh.advertise<std_msgs::Float32MultiArray>("std_msgs/Float32MultiArray", 1000);
 	double c,r;
 	std::ostringstream disTxt;
 	int pixelWidth;
