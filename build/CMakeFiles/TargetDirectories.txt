@@ -29,6 +29,7 @@
 /home/nejack/ros/build/opencv1/CMakeFiles/std_srvs_generate_messages_cpp.dir
 /home/nejack/ros/build/opencv1/CMakeFiles/std_srvs_generate_messages_lisp.dir
 /home/nejack/ros/build/opencv1/CMakeFiles/std_srvs_generate_messages_py.dir
+/home/nejack/ros/build/opencv1/CMakeFiles/stephenWantsIt.dir
 /home/nejack/ros/build/sub_tuto/CMakeFiles/subpose.dir
 /home/nejack/ros/build/CMakeFiles/tests.dir
 /home/nejack/ros/build/agitr/CMakeFiles/throttle.dir

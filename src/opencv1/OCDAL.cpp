@@ -2,8 +2,7 @@
 #include <string>
 #include <geometry_msgs/Twist.h>
 #include "opencv2/imgproc.hpp"
-#include <std_msgs/Float32MultiArray.h>
-#include <std_msgs/MultiArrayDimension.h>
+#include <std_msgs/Int32.h>
 #include <opencv2/highgui/highgui.hpp>
 #include <math.h>
 #include <fstream>
@@ -23,7 +22,7 @@ int E_FAC = 8;
 int D_FAC = 12;
 Mat color;
 ros::Publisher msg;
-std_msgs::Float32MultiArray pubLocation;
+std_msgs::Int32 pubLocation;
 
 void calibrationBars(int, void*) {};
 
@@ -73,7 +72,7 @@ int calculateDist(Mat &color,Mat &thresh) {
 		greatest_x = *max_element(points_x.begin(), points_x.end());
 		lowest_x = *min_element(points_x.begin(), points_x.end());
 		center = accumulate(points_x.begin(), points_x.end(), 0)/points.size();
-		pubLocation.data.push_back(center);
+		pubLocation.data=(center);
 		//drawContours(color, hull, contour_index, Scalar(0, 255, 0), 3, 8, vector<Vec4i>(), 0, Point());
 		drawContours(color, contours, contour_index, Scalar(0, 255, 255), 2, 8, vector<Vec4i>(), 1, Point());
 	}
@@ -83,7 +82,7 @@ int calculateDist(Mat &color,Mat &thresh) {
 int main(int argc, char **argv){
 	ros::init(argc, argv,"OCDAL");
 	ros::NodeHandle nh;
-	msg=nh.advertise<std_msgs::Float32MultiArray>("std_msgs/Float32MultiArray", 1000);
+	msg=nh.advertise<std_msgs::Int32>("std_msgs/Int32", 1000);
 	double c,r;
 	std::ostringstream disTxt;
 	int pixelWidth;
@@ -111,7 +110,6 @@ int main(int argc, char **argv){
 		calibrated = image_Calib(color);
 		pixelWidth = calculateDist(color, calibrated);
 		dist = 567*101.6/(10*pixelWidth);
-		pubLocation.data.push_back(dist);
 		msg.publish(pubLocation);
 		imshow("Original", color);
 		//ROS_INFO_STREAM(dist);

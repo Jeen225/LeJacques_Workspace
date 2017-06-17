@@ -6,26 +6,16 @@
 
 #IncludeRegexTransform: 
 
-/home/nejack/ros/src/opencv1/OCDAL.cpp
+/home/nejack/ros/src/opencv1/stephenWantsIt.cpp
 ros/ros.h
--
-string
--
-geometry_msgs/Twist.h
 -
 opencv2/imgproc.hpp
 /home/nejack/ros/src/opencv1/opencv2/imgproc.hpp
-std_msgs/Int32.h
--
 opencv2/highgui/highgui.hpp
 -
 math.h
 -
-fstream
--
 iostream
--
-numeric
 -
 
 /usr/local/include/opencv/cxcore.h

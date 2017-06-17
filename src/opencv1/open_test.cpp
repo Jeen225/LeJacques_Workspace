@@ -10,14 +10,14 @@
 using namespace cv;
 using namespace std;
 
-int H_MIN = 102;				/*int H_MIN = 33;*/
-int H_MAX = 129;			/*int H_MAX = 79;*/
-int S_MIN = 178;				/*int S_MIN = 36;*/
-int S_MAX = 256;			/*int S_MAX = 115;*/
-int V_MIN = 75;				/*int V_MIN = 93;*/
-int V_MAX = 256;			/*int V_MAX = 227;*/
-int E_FAC = 15;
-int D_FAC = 5;
+int H_MIN = 0;				/*int H_MIN = 33;*/
+int H_MAX = 255;			/*int H_MAX = 79;*/
+int S_MIN = 0;				/*int S_MIN = 36;*/
+int S_MAX = 255;			/*int S_MAX = 115;*/
+int V_MIN = 0;				/*int V_MIN = 93;*/
+int V_MAX = 255;			/*int V_MAX = 227;*/
+int E_FAC = 1;
+int D_FAC = 1;
 Point center;
 
 void calibrationBars(int, void*) {}
@@ -62,8 +62,7 @@ void contouring(Mat &color,Mat &thresh) {
 		}
 		points = hull[contour_index];
 		drawContours(color, hull, contour_index, Scalar(0, 255, 0), 3, 8, vector<Vec4i>(), 0, Point());
-		//drawContours(color, contours, contour_index, Scalar(0, 255, 255), 2, 8, vector<Vec4i>(), 1, Point());
-		//drawContours(drawing, hull, contour_index, Scalar(0, 255, 255), 2, 8, vector<Vec4i>(), 1, Point());
+		drawContours(drawing, hull, contour_index, Scalar(0, 255, 255), 2, 8, vector<Vec4i>(), 1, Point());
 		cvtColor(drawing, drawing_g, COLOR_BGR2GRAY);
 		for (int i = 0;i < points.size();i++) {
 			circle(color, points[i], 5, Scalar(255, 0, 255), FILLED, LINE_8);
@@ -105,7 +104,7 @@ int main(int argc, char **argv){
 	ros::Publisher pubCenter=nh.advertise<std_msgs::Float32MultiArray>("std_msgs/Float32MultiArray", 1000);
 	ROS_INFO("main start");
 	double c,r;
-	VideoCapture cap(0);
+	VideoCapture cap(1);
 	if (!cap.isOpened()){
 		ROS_ERROR("camera not open");
 		return -1;
