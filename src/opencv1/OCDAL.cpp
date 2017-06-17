@@ -23,7 +23,7 @@ int E_FAC = 8;
 int D_FAC = 12;
 Mat color;
 ros::Publisher msg;
-vector<double> pubLocation;
+std_msgs::Float32MultiArray pubLocation;
 
 void calibrationBars(int, void*) {};
 
@@ -73,7 +73,7 @@ int calculateDist(Mat &color,Mat &thresh) {
 		greatest_x = *max_element(points_x.begin(), points_x.end());
 		lowest_x = *min_element(points_x.begin(), points_x.end());
 		center = accumulate(points_x.begin(), points_x.end(), 0)/points.size();
-		pubLocation.push_back(center);
+		pubLocation.data.push_back(center);
 		//drawContours(color, hull, contour_index, Scalar(0, 255, 0), 3, 8, vector<Vec4i>(), 0, Point());
 		drawContours(color, contours, contour_index, Scalar(0, 255, 255), 2, 8, vector<Vec4i>(), 1, Point());
 	}
@@ -88,7 +88,7 @@ int main(int argc, char **argv){
 	std::ostringstream disTxt;
 	int pixelWidth;
 	double dist;
-	VideoCapture cap(0); //Webcam 0, USB Cam 1
+	VideoCapture cap(1); //Webcam 0, USB Cam 1
 	if (!cap.isOpened()){
 		ROS_ERROR("camera not open");
 		return -1;
@@ -111,12 +111,14 @@ int main(int argc, char **argv){
 		calibrated = image_Calib(color);
 		pixelWidth = calculateDist(color, calibrated);
 		dist = 567*101.6/(10*pixelWidth);
-		pubLocation.push_back(dist);
+		pubLocation.data.push_back(dist);
+		msg.publish(pubLocation);
 		imshow("Original", color);
 		//ROS_INFO_STREAM(dist);
-		waitKey(0);
+		waitKey(10);
 		ros::Rate rate(10);
 		ros::spinOnce();
+		rate.sleep();
 	}
 	return 0;
 }
