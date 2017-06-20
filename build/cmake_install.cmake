@@ -121,6 +121,7 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   INCLUDE("/home/nejack/ros/build/uno_tortuga/cmake_install.cmake")
   INCLUDE("/home/nejack/ros/build/agitr/cmake_install.cmake")
   INCLUDE("/home/nejack/ros/build/smach_test/cmake_install.cmake")
+  INCLUDE("/home/nejack/ros/build/opencv1/cmake_install.cmake")
   INCLUDE("/home/nejack/ros/build/sub_tuto/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)

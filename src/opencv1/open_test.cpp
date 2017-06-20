@@ -10,12 +10,12 @@
 using namespace cv;
 using namespace std;
 
-int H_MIN = 0;				/*int H_MIN = 33;*/
-int H_MAX = 255;			/*int H_MAX = 79;*/
-int S_MIN = 0;				/*int S_MIN = 36;*/
-int S_MAX = 255;			/*int S_MAX = 115;*/
-int V_MIN = 0;				/*int V_MIN = 93;*/
-int V_MAX = 255;			/*int V_MAX = 227;*/
+int H_MIN = 0;				
+int H_MAX = 255;			
+int S_MIN = 0;				
+int S_MAX = 255;			
+int V_MIN = 0;				
+int V_MAX = 255;			
 int E_FAC = 1;
 int D_FAC = 1;
 Point center;
