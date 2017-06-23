@@ -1,0 +1,8 @@
+prefix=/home/nejack/ros/devel
+
+Name: stephen_iarc
+Description: Description of stephen_iarc
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/nejack/ros/devel/lib 
+Requires: 

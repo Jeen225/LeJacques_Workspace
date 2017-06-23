@@ -248,20 +248,6 @@ std_srvs_generate_messages_py/fast:
 .PHONY : std_srvs_generate_messages_py/fast
 
 # Convenience name for target.
-opencv1/CMakeFiles/stephenWantsIt.dir/rule:
-	cd /home/nejack/ros/build && $(MAKE) -f CMakeFiles/Makefile2 opencv1/CMakeFiles/stephenWantsIt.dir/rule
-.PHONY : opencv1/CMakeFiles/stephenWantsIt.dir/rule
-
-# Convenience name for target.
-stephenWantsIt: opencv1/CMakeFiles/stephenWantsIt.dir/rule
-.PHONY : stephenWantsIt
-
-# fast build rule for target.
-stephenWantsIt/fast:
-	cd /home/nejack/ros/build && $(MAKE) -f opencv1/CMakeFiles/stephenWantsIt.dir/build.make opencv1/CMakeFiles/stephenWantsIt.dir/build
-.PHONY : stephenWantsIt/fast
-
-# Convenience name for target.
 opencv1/CMakeFiles/turtlesim_generate_messages_cpp.dir/rule:
 	cd /home/nejack/ros/build && $(MAKE) -f CMakeFiles/Makefile2 opencv1/CMakeFiles/turtlesim_generate_messages_cpp.dir/rule
 .PHONY : opencv1/CMakeFiles/turtlesim_generate_messages_cpp.dir/rule
@@ -399,30 +385,6 @@ open_test.cpp.s:
 	cd /home/nejack/ros/build && $(MAKE) -f opencv1/CMakeFiles/open_test.dir/build.make opencv1/CMakeFiles/open_test.dir/open_test.cpp.s
 .PHONY : open_test.cpp.s
 
-stephenWantsIt.o: stephenWantsIt.cpp.o
-.PHONY : stephenWantsIt.o
-
-# target to build an object file
-stephenWantsIt.cpp.o:
-	cd /home/nejack/ros/build && $(MAKE) -f opencv1/CMakeFiles/stephenWantsIt.dir/build.make opencv1/CMakeFiles/stephenWantsIt.dir/stephenWantsIt.cpp.o
-.PHONY : stephenWantsIt.cpp.o
-
-stephenWantsIt.i: stephenWantsIt.cpp.i
-.PHONY : stephenWantsIt.i
-
-# target to preprocess a source file
-stephenWantsIt.cpp.i:
-	cd /home/nejack/ros/build && $(MAKE) -f opencv1/CMakeFiles/stephenWantsIt.dir/build.make opencv1/CMakeFiles/stephenWantsIt.dir/stephenWantsIt.cpp.i
-.PHONY : stephenWantsIt.cpp.i
-
-stephenWantsIt.s: stephenWantsIt.cpp.s
-.PHONY : stephenWantsIt.s
-
-# target to generate assembly for a file
-stephenWantsIt.cpp.s:
-	cd /home/nejack/ros/build && $(MAKE) -f opencv1/CMakeFiles/stephenWantsIt.dir/build.make opencv1/CMakeFiles/stephenWantsIt.dir/stephenWantsIt.cpp.s
-.PHONY : stephenWantsIt.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -442,7 +404,6 @@ help:
 	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... std_srvs_generate_messages_lisp"
 	@echo "... std_srvs_generate_messages_py"
-	@echo "... stephenWantsIt"
 	@echo "... test"
 	@echo "... turtlesim_generate_messages_cpp"
 	@echo "... turtlesim_generate_messages_lisp"
@@ -459,9 +420,6 @@ help:
 	@echo "... open_test.o"
 	@echo "... open_test.i"
 	@echo "... open_test.s"
-	@echo "... stephenWantsIt.o"
-	@echo "... stephenWantsIt.i"
-	@echo "... stephenWantsIt.s"
 .PHONY : help
 
 

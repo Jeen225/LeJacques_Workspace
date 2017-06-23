@@ -12,14 +12,14 @@
 using namespace cv;
 using namespace std;
 
-int H_MIN = 36;			
-int H_MAX = 61;			
-int S_MIN = 132;			
-int S_MAX = 206;			
-int V_MIN = 69;				
-int V_MAX = 226;
-int E_FAC = 8;
-int D_FAC = 12;
+int H_MIN = 0;			
+int H_MAX = 255;			
+int S_MIN = 0;			
+int S_MAX = 255;			
+int V_MIN = 0;				
+int V_MAX = 255;
+int E_FAC = 1;
+int D_FAC = 1;
 Mat color;
 ros::Publisher msg;
 std_msgs::Int32 pubLocation;

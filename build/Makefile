@@ -488,6 +488,19 @@ throttle/fast:
 .PHONY : throttle/fast
 
 #=============================================================================
+# Target rules for targets named blob_detect
+
+# Build rule for target.
+blob_detect: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 blob_detect
+.PHONY : blob_detect
+
+# fast build rule for target.
+blob_detect/fast:
+	$(MAKE) -f roomba_iarc/CMakeFiles/blob_detect.dir/build.make roomba_iarc/CMakeFiles/blob_detect.dir/build
+.PHONY : blob_detect/fast
+
+#=============================================================================
 # Target rules for targets named OCDAL
 
 # Build rule for target.
@@ -577,19 +590,6 @@ std_srvs_generate_messages_py: cmake_check_build_system
 std_srvs_generate_messages_py/fast:
 	$(MAKE) -f opencv1/CMakeFiles/std_srvs_generate_messages_py.dir/build.make opencv1/CMakeFiles/std_srvs_generate_messages_py.dir/build
 .PHONY : std_srvs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named stephenWantsIt
-
-# Build rule for target.
-stephenWantsIt: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 stephenWantsIt
-.PHONY : stephenWantsIt
-
-# fast build rule for target.
-stephenWantsIt/fast:
-	$(MAKE) -f opencv1/CMakeFiles/stephenWantsIt.dir/build.make opencv1/CMakeFiles/stephenWantsIt.dir/build
-.PHONY : stephenWantsIt/fast
 
 #=============================================================================
 # Target rules for targets named turtlesim_generate_messages_cpp
@@ -682,6 +682,7 @@ help:
 	@echo "... once"
 	@echo "... reverse_cmd_vel"
 	@echo "... throttle"
+	@echo "... blob_detect"
 	@echo "... OCDAL"
 	@echo "... calc"
 	@echo "... calculate_area"
@@ -689,7 +690,6 @@ help:
 	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... std_srvs_generate_messages_lisp"
 	@echo "... std_srvs_generate_messages_py"
-	@echo "... stephenWantsIt"
 	@echo "... turtlesim_generate_messages_cpp"
 	@echo "... turtlesim_generate_messages_lisp"
 	@echo "... turtlesim_generate_messages_py"

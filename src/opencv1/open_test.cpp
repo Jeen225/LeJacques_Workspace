@@ -136,7 +136,7 @@ int main(int argc, char **argv){
 		msg.data.push_back(c);
 		msg.data.push_back(r);
 		pubCenter.publish(msg);
-		waitKey(30);
+		waitKey(10);
 		
 		ros::spinOnce();
 	}

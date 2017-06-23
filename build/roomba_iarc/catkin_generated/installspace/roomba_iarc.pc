@@ -1,0 +1,8 @@
+prefix=/home/nejack/ros/install
+
+Name: roomba_iarc
+Description: Description of roomba_iarc
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/nejack/ros/install/lib 
+Requires: 

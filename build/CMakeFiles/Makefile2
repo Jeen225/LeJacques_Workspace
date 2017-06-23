@@ -230,7 +230,7 @@ gtest/preinstall:
 gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nejack/ros/build/CMakeFiles  5
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nejack/ros/build/CMakeFiles  6
 	@echo "Built target gtest"
 .PHONY : gtest/CMakeFiles/gtest.dir/all
 
@@ -261,7 +261,7 @@ clean: gtest/CMakeFiles/gtest.dir/clean
 gtest/CMakeFiles/gtest_main.dir/all: gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nejack/ros/build/CMakeFiles  6
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nejack/ros/build/CMakeFiles  7
 	@echo "Built target gtest_main"
 .PHONY : gtest/CMakeFiles/gtest_main.dir/all
 
@@ -412,7 +412,7 @@ clean: pub_tuto/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 pub_tuto/CMakeFiles/pubvel.dir/all:
 	$(MAKE) -f pub_tuto/CMakeFiles/pubvel.dir/build.make pub_tuto/CMakeFiles/pubvel.dir/depend
 	$(MAKE) -f pub_tuto/CMakeFiles/pubvel.dir/build.make pub_tuto/CMakeFiles/pubvel.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nejack/ros/build/CMakeFiles  10
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nejack/ros/build/CMakeFiles  11
 	@echo "Built target pubvel"
 .PHONY : pub_tuto/CMakeFiles/pubvel.dir/all
 
@@ -795,7 +795,7 @@ agitr/preinstall:
 agitr/CMakeFiles/count.dir/all:
 	$(MAKE) -f agitr/CMakeFiles/count.dir/build.make agitr/CMakeFiles/count.dir/depend
 	$(MAKE) -f agitr/CMakeFiles/count.dir/build.make agitr/CMakeFiles/count.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nejack/ros/build/CMakeFiles  4
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nejack/ros/build/CMakeFiles  5
 	@echo "Built target count"
 .PHONY : agitr/CMakeFiles/count.dir/all
 
@@ -830,7 +830,7 @@ clean: agitr/CMakeFiles/count.dir/clean
 agitr/CMakeFiles/hello.dir/all:
 	$(MAKE) -f agitr/CMakeFiles/hello.dir/build.make agitr/CMakeFiles/hello.dir/depend
 	$(MAKE) -f agitr/CMakeFiles/hello.dir/build.make agitr/CMakeFiles/hello.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nejack/ros/build/CMakeFiles  7
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nejack/ros/build/CMakeFiles  8
 	@echo "Built target hello"
 .PHONY : agitr/CMakeFiles/hello.dir/all
 
@@ -865,7 +865,7 @@ clean: agitr/CMakeFiles/hello.dir/clean
 agitr/CMakeFiles/once.dir/all:
 	$(MAKE) -f agitr/CMakeFiles/once.dir/build.make agitr/CMakeFiles/once.dir/depend
 	$(MAKE) -f agitr/CMakeFiles/once.dir/build.make agitr/CMakeFiles/once.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nejack/ros/build/CMakeFiles  8
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nejack/ros/build/CMakeFiles  9
 	@echo "Built target once"
 .PHONY : agitr/CMakeFiles/once.dir/all
 
@@ -900,7 +900,7 @@ clean: agitr/CMakeFiles/once.dir/clean
 agitr/CMakeFiles/reverse_cmd_vel.dir/all:
 	$(MAKE) -f agitr/CMakeFiles/reverse_cmd_vel.dir/build.make agitr/CMakeFiles/reverse_cmd_vel.dir/depend
 	$(MAKE) -f agitr/CMakeFiles/reverse_cmd_vel.dir/build.make agitr/CMakeFiles/reverse_cmd_vel.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nejack/ros/build/CMakeFiles  11
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nejack/ros/build/CMakeFiles  12
 	@echo "Built target reverse_cmd_vel"
 .PHONY : agitr/CMakeFiles/reverse_cmd_vel.dir/all
 
@@ -964,6 +964,56 @@ clean: agitr/CMakeFiles/throttle.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory roomba_iarc
+
+# Convenience name for "all" pass in the directory.
+roomba_iarc/all: roomba_iarc/CMakeFiles/blob_detect.dir/all
+.PHONY : roomba_iarc/all
+
+# Convenience name for "clean" pass in the directory.
+roomba_iarc/clean: roomba_iarc/CMakeFiles/blob_detect.dir/clean
+.PHONY : roomba_iarc/clean
+
+# Convenience name for "preinstall" pass in the directory.
+roomba_iarc/preinstall:
+.PHONY : roomba_iarc/preinstall
+
+#=============================================================================
+# Target rules for target roomba_iarc/CMakeFiles/blob_detect.dir
+
+# All Build rule for target.
+roomba_iarc/CMakeFiles/blob_detect.dir/all:
+	$(MAKE) -f roomba_iarc/CMakeFiles/blob_detect.dir/build.make roomba_iarc/CMakeFiles/blob_detect.dir/depend
+	$(MAKE) -f roomba_iarc/CMakeFiles/blob_detect.dir/build.make roomba_iarc/CMakeFiles/blob_detect.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nejack/ros/build/CMakeFiles  2
+	@echo "Built target blob_detect"
+.PHONY : roomba_iarc/CMakeFiles/blob_detect.dir/all
+
+# Include target in all.
+all: roomba_iarc/CMakeFiles/blob_detect.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+roomba_iarc/CMakeFiles/blob_detect.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nejack/ros/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 roomba_iarc/CMakeFiles/blob_detect.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nejack/ros/build/CMakeFiles 0
+.PHONY : roomba_iarc/CMakeFiles/blob_detect.dir/rule
+
+# Convenience name for target.
+blob_detect: roomba_iarc/CMakeFiles/blob_detect.dir/rule
+.PHONY : blob_detect
+
+# clean rule for target.
+roomba_iarc/CMakeFiles/blob_detect.dir/clean:
+	$(MAKE) -f roomba_iarc/CMakeFiles/blob_detect.dir/build.make roomba_iarc/CMakeFiles/blob_detect.dir/clean
+.PHONY : roomba_iarc/CMakeFiles/blob_detect.dir/clean
+
+# clean rule for target.
+clean: roomba_iarc/CMakeFiles/blob_detect.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory smach_test
 
 # Convenience name for "all" pass in the directory.
@@ -986,7 +1036,6 @@ opencv1/all: opencv1/CMakeFiles/OCDAL.dir/all
 opencv1/all: opencv1/CMakeFiles/calc.dir/all
 opencv1/all: opencv1/CMakeFiles/calculate_area.dir/all
 opencv1/all: opencv1/CMakeFiles/open_test.dir/all
-opencv1/all: opencv1/CMakeFiles/stephenWantsIt.dir/all
 .PHONY : opencv1/all
 
 # Convenience name for "clean" pass in the directory.
@@ -997,7 +1046,6 @@ opencv1/clean: opencv1/CMakeFiles/open_test.dir/clean
 opencv1/clean: opencv1/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
 opencv1/clean: opencv1/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean
 opencv1/clean: opencv1/CMakeFiles/std_srvs_generate_messages_py.dir/clean
-opencv1/clean: opencv1/CMakeFiles/stephenWantsIt.dir/clean
 opencv1/clean: opencv1/CMakeFiles/turtlesim_generate_messages_cpp.dir/clean
 opencv1/clean: opencv1/CMakeFiles/turtlesim_generate_messages_lisp.dir/clean
 opencv1/clean: opencv1/CMakeFiles/turtlesim_generate_messages_py.dir/clean
@@ -1049,7 +1097,7 @@ clean: opencv1/CMakeFiles/OCDAL.dir/clean
 opencv1/CMakeFiles/calc.dir/all:
 	$(MAKE) -f opencv1/CMakeFiles/calc.dir/build.make opencv1/CMakeFiles/calc.dir/depend
 	$(MAKE) -f opencv1/CMakeFiles/calc.dir/build.make opencv1/CMakeFiles/calc.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nejack/ros/build/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nejack/ros/build/CMakeFiles  3
 	@echo "Built target calc"
 .PHONY : opencv1/CMakeFiles/calc.dir/all
 
@@ -1084,7 +1132,7 @@ clean: opencv1/CMakeFiles/calc.dir/clean
 opencv1/CMakeFiles/calculate_area.dir/all:
 	$(MAKE) -f opencv1/CMakeFiles/calculate_area.dir/build.make opencv1/CMakeFiles/calculate_area.dir/depend
 	$(MAKE) -f opencv1/CMakeFiles/calculate_area.dir/build.make opencv1/CMakeFiles/calculate_area.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nejack/ros/build/CMakeFiles  3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nejack/ros/build/CMakeFiles  4
 	@echo "Built target calculate_area"
 .PHONY : opencv1/CMakeFiles/calculate_area.dir/all
 
@@ -1119,7 +1167,7 @@ clean: opencv1/CMakeFiles/calculate_area.dir/clean
 opencv1/CMakeFiles/open_test.dir/all:
 	$(MAKE) -f opencv1/CMakeFiles/open_test.dir/build.make opencv1/CMakeFiles/open_test.dir/depend
 	$(MAKE) -f opencv1/CMakeFiles/open_test.dir/build.make opencv1/CMakeFiles/open_test.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nejack/ros/build/CMakeFiles  9
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/nejack/ros/build/CMakeFiles  10
 	@echo "Built target open_test"
 .PHONY : opencv1/CMakeFiles/open_test.dir/all
 
@@ -1238,41 +1286,6 @@ opencv1/CMakeFiles/std_srvs_generate_messages_py.dir/clean:
 
 # clean rule for target.
 clean: opencv1/CMakeFiles/std_srvs_generate_messages_py.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target opencv1/CMakeFiles/stephenWantsIt.dir
-
-# All Build rule for target.
-opencv1/CMakeFiles/stephenWantsIt.dir/all:
-	$(MAKE) -f opencv1/CMakeFiles/stephenWantsIt.dir/build.make opencv1/CMakeFiles/stephenWantsIt.dir/depend
-	$(MAKE) -f opencv1/CMakeFiles/stephenWantsIt.dir/build.make opencv1/CMakeFiles/stephenWantsIt.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nejack/ros/build/CMakeFiles  12
-	@echo "Built target stephenWantsIt"
-.PHONY : opencv1/CMakeFiles/stephenWantsIt.dir/all
-
-# Include target in all.
-all: opencv1/CMakeFiles/stephenWantsIt.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-opencv1/CMakeFiles/stephenWantsIt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nejack/ros/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 opencv1/CMakeFiles/stephenWantsIt.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nejack/ros/build/CMakeFiles 0
-.PHONY : opencv1/CMakeFiles/stephenWantsIt.dir/rule
-
-# Convenience name for target.
-stephenWantsIt: opencv1/CMakeFiles/stephenWantsIt.dir/rule
-.PHONY : stephenWantsIt
-
-# clean rule for target.
-opencv1/CMakeFiles/stephenWantsIt.dir/clean:
-	$(MAKE) -f opencv1/CMakeFiles/stephenWantsIt.dir/build.make opencv1/CMakeFiles/stephenWantsIt.dir/clean
-.PHONY : opencv1/CMakeFiles/stephenWantsIt.dir/clean
-
-# clean rule for target.
-clean: opencv1/CMakeFiles/stephenWantsIt.dir/clean
 .PHONY : clean
 
 #=============================================================================
