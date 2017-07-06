@@ -54,5 +54,5 @@ int main(int argc, char **argv){
 	ros::Subscriber subDirection = nh.subscribe("turtle1/pose",1000,&poseMessageReceived);
 	pubAngle = nh.advertise<geometry_msgs::Twist>("turtle1/cmd_vel",1000);
 	ros::Rate rate(10);
-		ros::spin();
+	ros::spin();
 }
