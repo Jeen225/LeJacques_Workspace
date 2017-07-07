@@ -15,7 +15,7 @@ int main( int argc, char** argv ){
 	ros::init(argc, argv,"roomba_pose");
 	ros::NodeHandle nh;
 	ros::Publisher pubCenter=nh.advertise<std_msgs::Int32MultiArray>("std_msgs/Int32MultiArray", 1000);
-	VideoCapture cap(1);
+	VideoCapture cap(0);
 	if (!cap.isOpened()){
 		return -1;
 	}
