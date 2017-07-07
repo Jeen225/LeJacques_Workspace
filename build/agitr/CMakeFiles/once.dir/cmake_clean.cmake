@@ -1,10 +1,10 @@
-FILE(REMOVE_RECURSE
+file(REMOVE_RECURSE
   "CMakeFiles/once.dir/once.cpp.o"
-  "/home/nejack/ros/devel/lib/agitr/once.pdb"
-  "/home/nejack/ros/devel/lib/agitr/once"
+  "/home/nejack/ros_workspace/devel/lib/agitr/once.pdb"
+  "/home/nejack/ros_workspace/devel/lib/agitr/once"
 )
 
 # Per-language clean rules from dependency scanning.
-FOREACH(lang CXX)
-  INCLUDE(CMakeFiles/once.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)
+foreach(lang CXX)
+  include(CMakeFiles/once.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -1,0 +1,8 @@
+prefix=/home/nejack/ros_workspace/devel
+
+Name: auv_sub_pi
+Description: Description of auv_sub_pi
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/nejack/ros_workspace/devel/lib 
+Requires: 

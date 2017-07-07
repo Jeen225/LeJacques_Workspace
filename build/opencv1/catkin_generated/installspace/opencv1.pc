@@ -1,8 +1,8 @@
-prefix=/home/nejack/ros/install
+prefix=/home/nejack/ros_workspace/install
 
 Name: opencv1
 Description: Description of opencv1
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/nejack/ros/install/lib 
+Libs: -L/home/nejack/ros_workspace/install/lib 
 Requires: 

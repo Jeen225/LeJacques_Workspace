@@ -1,8 +1,8 @@
-prefix=/home/nejack/ros/devel
+prefix=/home/nejack/ros_workspace/devel
 
 Name: agitr
 Description: Description of agitr
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/nejack/ros/devel/lib 
+Libs: -L/home/nejack/ros_workspace/devel/lib 
 Requires: 

@@ -1,10 +1,10 @@
-FILE(REMOVE_RECURSE
+file(REMOVE_RECURSE
   "CMakeFiles/pubvel.dir/pubvel.cpp.o"
-  "/home/nejack/ros/devel/lib/pub_tuto/pubvel.pdb"
-  "/home/nejack/ros/devel/lib/pub_tuto/pubvel"
+  "/home/nejack/ros_workspace/devel/lib/pub_tuto/pubvel.pdb"
+  "/home/nejack/ros_workspace/devel/lib/pub_tuto/pubvel"
 )
 
 # Per-language clean rules from dependency scanning.
-FOREACH(lang CXX)
-  INCLUDE(CMakeFiles/pubvel.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)
+foreach(lang CXX)
+  include(CMakeFiles/pubvel.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

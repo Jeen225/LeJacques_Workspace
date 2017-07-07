@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/nejack/ros/devel/setup.sh
+    local-name: /home/nejack/ros_workspace/devel/setup.sh

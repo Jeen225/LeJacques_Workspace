@@ -1,8 +1,0 @@
-prefix=/home/nejack/ros/install
-
-Name: stephen_iarc
-Description: Description of stephen_iarc
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/nejack/ros/install/lib 
-Requires: 
