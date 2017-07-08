@@ -132,7 +132,7 @@ int PI::roll_command()
 			return 1500;
 			break;
 		case 2:					//2 should be downard facing camera
-			return 1500;
+			return getCommand();
 			break;						
 	}
 }
@@ -142,7 +142,7 @@ int PI::yaw_command()
 	switch(mode)
 	{
 		case 1:					//1 should be forward facing camera 
-			return 1500;
+			return getCommand();
 			break;
 		case 2:					//2 should be downard facing camera
 			return 1500;
@@ -156,7 +156,7 @@ int PI::throttle_command()
 	switch(mode)
 	{
 		case 1:					//1 should be forward facing camera 
-			return 1500;
+			return getCommand();
 			break;
 		case 2:					//2 should be downard facing camera
 			return 1500;
@@ -173,7 +173,7 @@ int PI::pitch_command()
 			return 1500;
 			break;
 		case 2:					//2 should be downard facing camera
-			return 1500;
+			return getCommand();
 			break;						
 	}
 
