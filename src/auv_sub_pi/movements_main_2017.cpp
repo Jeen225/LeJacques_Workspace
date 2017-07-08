@@ -18,6 +18,8 @@
 #define MID_PWM 	1500
 #define LOW_PWM 	1100
 
+using namespace std;
+
 ros::Publisher auv_pid_rc_override;
 
 int target [2]; 
@@ -52,7 +54,6 @@ int main(int argc, char **argv)
 	PI yaw_controller(1900,1100,4);
 	while (ros::ok())
     {
-		ros::spinOnce();
 		if(mode != past_mode)
 		{
 			roll_controller.reset();
@@ -77,6 +78,7 @@ int main(int argc, char **argv)
 		}
 		MAV_MSG.channels[MODES_CHAN] = HIGH_PWM;
 		auv_pid_rc_override.publish(MAV_MSG);
+		ros::spinOnce();
         RC_COMM_RATE.sleep;      
     }
     return 0;
