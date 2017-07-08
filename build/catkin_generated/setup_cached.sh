@@ -7,9 +7,5 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/nejack/ros_workspace/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/nejack/ros_workspace/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/nejack/ros_workspace/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PATH="/opt/ros/kinetic/bin:/home/nejack/anaconda2/bin:/home/nejack/bin:/home/nejack/.local/bin:/home/nejack/anaconda2/bin:/home/nejack/bin:/home/nejack/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin"
 export PWD="/home/nejack/ros_workspace/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/nejack/ros_workspace/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/nejack/ros_workspace/src:$ROS_PACKAGE_PATH"

@@ -26,8 +26,8 @@ ros::Publisher auv_pid_rc_override;
 int x,y;
 
 void poseMessage(const std_msgs::Int32MultiArray& msg){
-		x=msg->data[1];
-        y=msg->data[2];
+		x=msg.data[1];
+        y=msg.data[2];
 }
 
 int main( int argc, char** argv ){

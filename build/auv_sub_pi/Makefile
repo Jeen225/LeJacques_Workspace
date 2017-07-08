@@ -56,28 +56,6 @@ CMAKE_BINARY_DIR = /home/nejack/ros_workspace/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -100,16 +78,38 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
 
-# Special rule for the target install/local
-install/local/fast: install/local
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
 
-.PHONY : install/local/fast
+.PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -122,16 +122,16 @@ install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
 
-# Special rule for the target test
-test/fast: test
+# Special rule for the target install/local
+install/local/fast: install/local
 
-.PHONY : test/fast
+.PHONY : install/local/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -166,19 +166,73 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-auv_sub_pi/CMakeFiles/_catkin_empty_exported_target.dir/rule:
-	cd /home/nejack/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 auv_sub_pi/CMakeFiles/_catkin_empty_exported_target.dir/rule
-.PHONY : auv_sub_pi/CMakeFiles/_catkin_empty_exported_target.dir/rule
+auv_sub_pi/CMakeFiles/controller_calib_node.dir/rule:
+	cd /home/nejack/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 auv_sub_pi/CMakeFiles/controller_calib_node.dir/rule
+.PHONY : auv_sub_pi/CMakeFiles/controller_calib_node.dir/rule
 
 # Convenience name for target.
-_catkin_empty_exported_target: auv_sub_pi/CMakeFiles/_catkin_empty_exported_target.dir/rule
+controller_calib_node: auv_sub_pi/CMakeFiles/controller_calib_node.dir/rule
 
-.PHONY : _catkin_empty_exported_target
+.PHONY : controller_calib_node
 
 # fast build rule for target.
-_catkin_empty_exported_target/fast:
-	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/_catkin_empty_exported_target.dir/build.make auv_sub_pi/CMakeFiles/_catkin_empty_exported_target.dir/build
-.PHONY : _catkin_empty_exported_target/fast
+controller_calib_node/fast:
+	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/controller_calib_node.dir/build.make auv_sub_pi/CMakeFiles/controller_calib_node.dir/build
+.PHONY : controller_calib_node/fast
+
+controller_calib.o: controller_calib.cpp.o
+
+.PHONY : controller_calib.o
+
+# target to build an object file
+controller_calib.cpp.o:
+	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/controller_calib_node.dir/build.make auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o
+.PHONY : controller_calib.cpp.o
+
+controller_calib.i: controller_calib.cpp.i
+
+.PHONY : controller_calib.i
+
+# target to preprocess a source file
+controller_calib.cpp.i:
+	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/controller_calib_node.dir/build.make auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.i
+.PHONY : controller_calib.cpp.i
+
+controller_calib.s: controller_calib.cpp.s
+
+.PHONY : controller_calib.s
+
+# target to generate assembly for a file
+controller_calib.cpp.s:
+	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/controller_calib_node.dir/build.make auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.s
+.PHONY : controller_calib.cpp.s
+
+pi.o: pi.cpp.o
+
+.PHONY : pi.o
+
+# target to build an object file
+pi.cpp.o:
+	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/controller_calib_node.dir/build.make auv_sub_pi/CMakeFiles/controller_calib_node.dir/pi.cpp.o
+.PHONY : pi.cpp.o
+
+pi.i: pi.cpp.i
+
+.PHONY : pi.i
+
+# target to preprocess a source file
+pi.cpp.i:
+	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/controller_calib_node.dir/build.make auv_sub_pi/CMakeFiles/controller_calib_node.dir/pi.cpp.i
+.PHONY : pi.cpp.i
+
+pi.s: pi.cpp.s
+
+.PHONY : pi.s
+
+# target to generate assembly for a file
+pi.cpp.s:
+	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/controller_calib_node.dir/build.make auv_sub_pi/CMakeFiles/controller_calib_node.dir/pi.cpp.s
+.PHONY : pi.cpp.s
 
 # Help Target
 help:
@@ -186,14 +240,20 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... list_install_components"
 	@echo "... install"
-	@echo "... _catkin_empty_exported_target"
-	@echo "... install/local"
-	@echo "... install/strip"
+	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... controller_calib_node"
 	@echo "... test"
+	@echo "... install/strip"
+	@echo "... install/local"
+	@echo "... controller_calib.o"
+	@echo "... controller_calib.i"
+	@echo "... controller_calib.s"
+	@echo "... pi.o"
+	@echo "... pi.i"
+	@echo "... pi.s"
 .PHONY : help
 
 
