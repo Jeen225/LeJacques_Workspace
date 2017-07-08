@@ -45,9 +45,10 @@ int main(int argc, char **argv)
     ros::init(argc, argv, "auv_pid");
     ros::NodeHandle nh;
     ros::Rate RC_COMM_RATE(45);
-    ros::Subscriber yolo_input = nh.subscriber("name of yolo", 1000, &yolo_callback); //
+    ros::Subscriber yolo_input = nh.subscribe("name of yolo", 1000, &yolo_callback); //
     auv_pid_rc_override = nh.advertise<mavros_msgs::OverrideRCIn>("mavros/rc/override", 1000);
     int past_mode = 0;
+    mavros_msgs::OverrideRCIn MAV_MSG;
     PI roll_controller(1900,1100,1);
 	PI pitch_controller(1900,1100,2);
 	PI throttle_controller(1900,1100,3);

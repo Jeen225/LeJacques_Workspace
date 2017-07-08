@@ -34,8 +34,9 @@ int main( int argc, char** argv ){
     ros::init(argc, argv,"controller_calib_node");
 	ros::NodeHandle nh;
     ros::Rate RC_COMM_RATE(45);
-    ros::Subscriber sub_obj = nh.subscriber("std_msgs/Int32MultiArray", 1000, &poseMessage);
+    ros::Subscriber sub_obj = nh.subscribe("std_msgs/Int32MultiArray", 1000, &poseMessage);
     auv_pid_rc_override = nh.advertise<mavros_msgs::OverrideRCIn>("mavros/rc/override", 1000);
+    mavros_msgs::OverrideRCIn MAV_MSG;
     PI calibrated_controller(1800,1200,4);  //PI(int inTopLimit,int inBottomLimit,int inChannel) 1-roll 2-pitch 3-throttle 4-yaw
     while (ros::ok())
     {
@@ -58,6 +59,6 @@ int main( int argc, char** argv ){
 		MAV_MSG.channels[MODES_CHAN] = HIGH_PWM;
 		auv_pid_rc_override.publish(MAV_MSG);		
         ros::spinOnce();
-        RC_COMM_RATE.sleep;
+        RC_COMM_RATE.sleep();
     }
 }

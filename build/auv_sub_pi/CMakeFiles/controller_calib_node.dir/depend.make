@@ -3,6 +3,16 @@
 
 auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o: /home/nejack/ros_workspace/src/auv_sub_pi/controller_calib.cpp
 auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o: /home/nejack/ros_workspace/src/auv_sub_pi/pi.h
+auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o: /opt/ros/kinetic/include/mavros_msgs/CommandBool.h
+auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o: /opt/ros/kinetic/include/mavros_msgs/CommandBoolRequest.h
+auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o: /opt/ros/kinetic/include/mavros_msgs/CommandBoolResponse.h
+auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o: /opt/ros/kinetic/include/mavros_msgs/Mavlink.h
+auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o: /opt/ros/kinetic/include/mavros_msgs/OverrideRCIn.h
+auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o: /opt/ros/kinetic/include/mavros_msgs/RCIn.h
+auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o: /opt/ros/kinetic/include/mavros_msgs/SetMode.h
+auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o: /opt/ros/kinetic/include/mavros_msgs/SetModeRequest.h
+auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o: /opt/ros/kinetic/include/mavros_msgs/SetModeResponse.h
+auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o: /opt/ros/kinetic/include/mavros_msgs/State.h
 auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o: /opt/ros/kinetic/include/ros/advertise_options.h
 auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o: /opt/ros/kinetic/include/ros/advertise_service_options.h
 auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o: /opt/ros/kinetic/include/ros/assert.h
@@ -57,6 +67,7 @@ auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o: /opt/ros
 auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o: /opt/ros/kinetic/include/ros/wall_timer.h
 auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o: /opt/ros/kinetic/include/ros/wall_timer_options.h
 auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o: /opt/ros/kinetic/include/rosconsole/macros_generated.h
+auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o: /opt/ros/kinetic/include/std_msgs/Header.h
 auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o: /opt/ros/kinetic/include/std_msgs/Int32MultiArray.h
 auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o: /opt/ros/kinetic/include/std_msgs/MultiArrayDimension.h
 auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o: /opt/ros/kinetic/include/std_msgs/MultiArrayLayout.h
