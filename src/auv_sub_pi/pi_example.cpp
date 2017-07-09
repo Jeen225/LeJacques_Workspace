@@ -5,10 +5,10 @@ using namespace std;
 
 int main()
 {
-	PI roll_controller(1900,1100,1);
+	PI yaw_controller(1900,1100,1);
 	while(1)
 	{
-		roll_controller.setPID(true,0,1,1);
-		cout <<roll_controller.getError() <<" " <<roll_controller.getCommand() <<" " <<roll_controller.roll_command() <<endl;
+		yaw_controller.setPID(true,320,640,4);
+		cout <<yaw_controller.getError() <<" "<<yaw_controller.kp <<" " <<yaw_controller.getCommand() <<" " <<yaw_controller.yaw_command() <<endl;
 	}
 }

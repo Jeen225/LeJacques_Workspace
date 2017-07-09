@@ -1,7 +1,7 @@
 #include <iostream>
 #include "pi.h"
 
-
+//3.1415926
 PI::PI()
 {
 }
@@ -22,7 +22,7 @@ double PI::getError()
 int PI::getCommand()
 {
 	dt = (clock() - cl)/(double)CLOCKS_PER_SEC;
-	cout <<dt;
+	//cout <<dt;
 	error = getError();
 	/*
 		Program integrator anti windup here
@@ -99,7 +99,7 @@ void PI::setGains()
 				switch(mode)
 				{
 					case 1:					//1 should be forward facing camera 
-						kp = 0; ki = 0;
+						kp = .9375; ki = 0;
 						break;
 					case 2:					//2 should be downard facing camera
 						kp = 0; ki = 0;
