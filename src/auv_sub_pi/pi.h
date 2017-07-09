@@ -7,7 +7,13 @@ using namespace std;
 //We will use a class and create PI objects that we can call inside of our main loop
 
 class PI{
-private:
+private: 
+	clock_t cl; 	
+public:
+	PI();
+	PI(int inTopLimit,int inBottomLimit,int inChannel);
+	double getError();
+	int getCommand();
 	int topLimit;
 	int bottomLimit;
 	double goal;
@@ -20,12 +26,6 @@ private:
 	double kp;
 	double ki;
 	double dt;
-	clock_t cl; 	
-public:
-	PI();
-	PI(int inTopLimit,int inBottomLimit,int inChannel);
-	double getError();
-	int getCommand();
 	void setPID(bool inStatus,int inGoal, int inPose, int inMode);
 	void setSigma();
 	void setGains();

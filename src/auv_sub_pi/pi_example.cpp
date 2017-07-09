@@ -5,10 +5,11 @@ using namespace std;
 
 int main()
 {
-	PI yaw_controller(1900,1100,1);
+	PI yaw_controller(1900,1100,4);
 	while(1)
 	{
-		yaw_controller.setPID(true,320,640,4);
-		cout <<yaw_controller.getError() <<" "<<yaw_controller.kp <<" " <<yaw_controller.getCommand() <<" " <<yaw_controller.yaw_command() <<endl;
+		yaw_controller.setPID(true,320,640,1);
+		//cout <<yaw_controller.kp <<" " <<yaw_controller.ki <<" " <<yaw_controller.mode <<" " <<yaw_controller.channel <<endl; 
+		cout <<yaw_controller.getError() <<" "  <<yaw_controller.getCommand() <<" " <<yaw_controller.yaw_command() <<endl;
 	}
 }

@@ -48,14 +48,10 @@ void PI::setPID(bool inStatus,int inGoal, int inPose, int inMode)
 
 void PI::setSigma()
 {
-	switch(status)
-	{
-		case true:
-			sigma += error*dt;
-			break;
-		case false:
-		    sigma = 0;
-	}
+	if(status)
+		sigma += error*dt;
+	else
+	    sigma = 0;
 }
 
 void PI::setGains()
