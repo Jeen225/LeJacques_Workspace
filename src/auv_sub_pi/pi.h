@@ -8,14 +8,6 @@ using namespace std;
 
 class PI{
 private: 
-	clock_t cl; 	
-public:
-	PI();
-	PI(int inTopLimit,int inBottomLimit,int inChannel);
-	double getError();
-	int getCommand();
-	int topLimit;
-	int bottomLimit;
 	double goal;
 	double pose;
 	int mode; 		
@@ -26,6 +18,14 @@ public:
 	double kp;
 	double ki;
 	double dt;
+	clock_t cl; 	
+public:
+	PI();
+	PI(int inTopLimit,int inBottomLimit,int inChannel);
+	double getError();
+	int topLimit;
+	int bottomLimit;
+	int getCommand();
 	void setPID(bool inStatus,int inGoal, int inPose, int inMode);
 	void setSigma();
 	void setGains();
