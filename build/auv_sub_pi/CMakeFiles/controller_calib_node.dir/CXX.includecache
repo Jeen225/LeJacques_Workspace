@@ -43,6 +43,8 @@ string
 -
 fstream
 -
+cmath
+-
 
 /opt/ros/kinetic/include/mavros_msgs/CommandBool.h
 ros/service_traits.h

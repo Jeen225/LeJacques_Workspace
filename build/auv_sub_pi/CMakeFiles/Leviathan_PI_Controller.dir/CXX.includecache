@@ -19,6 +19,8 @@ string
 -
 fstream
 -
+cmath
+-
 
 /home/nejack/ros_workspace/src/auv_sub_pi/pi_loop.cpp
 ros/ros.h
