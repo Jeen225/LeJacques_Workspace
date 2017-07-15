@@ -130,7 +130,7 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(controller_calib_node controller_calib.cpp pi.cpp)
-
+add_executable(Leviathan_PI_Controller pi_loop.cpp pi.cpp)
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
@@ -145,7 +145,9 @@ add_executable(controller_calib_node controller_calib.cpp pi.cpp)
 target_link_libraries(controller_calib_node
    ${catkin_LIBRARIES}
  )
-
+target_link_libraries(Leviathan_PI_Controller
+   ${catkin_LIBRARIES}
+ )
 #############
 ## Install ##
 #############

@@ -7,5 +7,5 @@
 # new environment variables
 
 # modified environment variables
-export PATH="/opt/ros/kinetic/bin:/home/nejack/anaconda2/bin:/home/nejack/bin:/home/nejack/.local/bin:/home/nejack/anaconda2/bin:/home/nejack/bin:/home/nejack/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin"
+export PATH="/opt/ros/kinetic/bin:/home/nejack/anaconda2/bin:/home/nejack/bin:/home/nejack/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
 export PWD="/home/nejack/ros_workspace/build"

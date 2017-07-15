@@ -70,9 +70,10 @@
 /home/nejack/ros_workspace/build/auv_sub_pi/CMakeFiles/list_install_components.dir
 /home/nejack/ros_workspace/build/auv_sub_pi/CMakeFiles/install.dir
 /home/nejack/ros_workspace/build/auv_sub_pi/CMakeFiles/edit_cache.dir
+/home/nejack/ros_workspace/build/auv_sub_pi/CMakeFiles/test.dir
 /home/nejack/ros_workspace/build/auv_sub_pi/CMakeFiles/rebuild_cache.dir
 /home/nejack/ros_workspace/build/auv_sub_pi/CMakeFiles/controller_calib_node.dir
-/home/nejack/ros_workspace/build/auv_sub_pi/CMakeFiles/test.dir
+/home/nejack/ros_workspace/build/auv_sub_pi/CMakeFiles/Leviathan_PI_Controller.dir
 /home/nejack/ros_workspace/build/auv_sub_pi/CMakeFiles/install/strip.dir
 /home/nejack/ros_workspace/build/auv_sub_pi/CMakeFiles/install/local.dir
 /home/nejack/ros_workspace/build/roomba_iarc/CMakeFiles/list_install_components.dir

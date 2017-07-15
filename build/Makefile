@@ -621,6 +621,19 @@ controller_calib_node/fast:
 .PHONY : controller_calib_node/fast
 
 #=============================================================================
+# Target rules for targets named Leviathan_PI_Controller
+
+# Build rule for target.
+Leviathan_PI_Controller: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Leviathan_PI_Controller
+.PHONY : Leviathan_PI_Controller
+
+# fast build rule for target.
+Leviathan_PI_Controller/fast:
+	$(MAKE) -f auv_sub_pi/CMakeFiles/Leviathan_PI_Controller.dir/build.make auv_sub_pi/CMakeFiles/Leviathan_PI_Controller.dir/build
+.PHONY : Leviathan_PI_Controller/fast
+
+#=============================================================================
 # Target rules for targets named blob_detect
 
 # Build rule for target.
@@ -876,6 +889,7 @@ help:
 	@echo "... reverse_cmd_vel"
 	@echo "... hello"
 	@echo "... controller_calib_node"
+	@echo "... Leviathan_PI_Controller"
 	@echo "... blob_detect"
 	@echo "... OCDAL"
 	@echo "... open_test"
