@@ -264,6 +264,12 @@ auv_sub_pi_BINARY_DIR:STATIC=/home/nejack/ros_workspace/build/auv_sub_pi
 //Value Computed by CMake
 auv_sub_pi_SOURCE_DIR:STATIC=/home/nejack/ros_workspace/src/auv_sub_pi
 
+//Value Computed by CMake
+auv_sub_pid_BINARY_DIR:STATIC=/home/nejack/ros_workspace/build/auv_sub_pi
+
+//Value Computed by CMake
+auv_sub_pid_SOURCE_DIR:STATIC=/home/nejack/ros_workspace/src/auv_sub_pi
+
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/kinetic/share/catkin/cmake
 

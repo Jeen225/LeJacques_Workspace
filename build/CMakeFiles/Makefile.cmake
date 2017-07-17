@@ -239,7 +239,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "agitr/CMakeFiles/reverse_cmd_vel.dir/DependInfo.cmake"
   "agitr/CMakeFiles/hello.dir/DependInfo.cmake"
   "auv_sub_pi/CMakeFiles/controller_calib_node.dir/DependInfo.cmake"
-  "auv_sub_pi/CMakeFiles/Leviathan_PI_Controller.dir/DependInfo.cmake"
+  "auv_sub_pi/CMakeFiles/Leviathan_PID_Controller.dir/DependInfo.cmake"
   "roomba_iarc/CMakeFiles/blob_detect.dir/DependInfo.cmake"
   "opencv1/CMakeFiles/OCDAL.dir/DependInfo.cmake"
   "opencv1/CMakeFiles/open_test.dir/DependInfo.cmake"

@@ -6,10 +6,28 @@
 
 #IncludeRegexTransform: 
 
-/home/nejack/ros_workspace/src/auv_sub_pi/controller_calib.cpp
+/home/nejack/ros_workspace/src/auv_sub_pi/pid.cpp
+iostream
+-
+pid.h
+/home/nejack/ros_workspace/src/auv_sub_pi/pid.h
+
+/home/nejack/ros_workspace/src/auv_sub_pi/pid.h
+iostream
+-
+string
+-
+fstream
+-
+cmath
+-
+
+/home/nejack/ros_workspace/src/auv_sub_pi/pid_loop.cpp
 ros/ros.h
 -
 std_msgs/Int32MultiArray.h
+-
+std_msgs/Bool.h
 -
 std_msgs/MultiArrayDimension.h
 -
@@ -29,22 +47,6 @@ iostream
 -
 pid.h
 /home/nejack/ros_workspace/src/auv_sub_pi/pid.h
-
-/home/nejack/ros_workspace/src/auv_sub_pi/pid.cpp
-iostream
--
-pid.h
-/home/nejack/ros_workspace/src/auv_sub_pi/pid.h
-
-/home/nejack/ros_workspace/src/auv_sub_pi/pid.h
-iostream
--
-string
--
-fstream
--
-cmath
--
 
 /opt/ros/kinetic/include/mavros_msgs/CommandBool.h
 ros/service_traits.h
@@ -825,6 +827,22 @@ ros/forwards.h
 /opt/ros/kinetic/include/ros/ros/forwards.h
 
 /opt/ros/kinetic/include/rosconsole/macros_generated.h
+
+/opt/ros/kinetic/include/std_msgs/Bool.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
 
 /opt/ros/kinetic/include/std_msgs/Header.h
 string

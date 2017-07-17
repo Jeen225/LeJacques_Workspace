@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/nejack/ros_workspace/build/auv_sub_pi/catkin_generated/installspace/auv_sub_pi.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/nejack/ros_workspace/build/auv_sub_pi/catkin_generated/installspace/auv_sub_pid.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/auv_sub_pi/cmake" TYPE FILE FILES
-    "/home/nejack/ros_workspace/build/auv_sub_pi/catkin_generated/installspace/auv_sub_piConfig.cmake"
-    "/home/nejack/ros_workspace/build/auv_sub_pi/catkin_generated/installspace/auv_sub_piConfig-version.cmake"
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/auv_sub_pid/cmake" TYPE FILE FILES
+    "/home/nejack/ros_workspace/build/auv_sub_pi/catkin_generated/installspace/auv_sub_pidConfig.cmake"
+    "/home/nejack/ros_workspace/build/auv_sub_pi/catkin_generated/installspace/auv_sub_pidConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/auv_sub_pi" TYPE FILE FILES "/home/nejack/ros_workspace/src/auv_sub_pi/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/auv_sub_pid" TYPE FILE FILES "/home/nejack/ros_workspace/src/auv_sub_pi/package.xml")
 endif()
 

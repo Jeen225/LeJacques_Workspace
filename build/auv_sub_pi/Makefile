@@ -89,17 +89,6 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -110,6 +99,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -181,19 +181,19 @@ controller_calib_node/fast:
 .PHONY : controller_calib_node/fast
 
 # Convenience name for target.
-auv_sub_pi/CMakeFiles/Leviathan_PI_Controller.dir/rule:
-	cd /home/nejack/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 auv_sub_pi/CMakeFiles/Leviathan_PI_Controller.dir/rule
-.PHONY : auv_sub_pi/CMakeFiles/Leviathan_PI_Controller.dir/rule
+auv_sub_pi/CMakeFiles/Leviathan_PID_Controller.dir/rule:
+	cd /home/nejack/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 auv_sub_pi/CMakeFiles/Leviathan_PID_Controller.dir/rule
+.PHONY : auv_sub_pi/CMakeFiles/Leviathan_PID_Controller.dir/rule
 
 # Convenience name for target.
-Leviathan_PI_Controller: auv_sub_pi/CMakeFiles/Leviathan_PI_Controller.dir/rule
+Leviathan_PID_Controller: auv_sub_pi/CMakeFiles/Leviathan_PID_Controller.dir/rule
 
-.PHONY : Leviathan_PI_Controller
+.PHONY : Leviathan_PID_Controller
 
 # fast build rule for target.
-Leviathan_PI_Controller/fast:
-	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/Leviathan_PI_Controller.dir/build.make auv_sub_pi/CMakeFiles/Leviathan_PI_Controller.dir/build
-.PHONY : Leviathan_PI_Controller/fast
+Leviathan_PID_Controller/fast:
+	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/Leviathan_PID_Controller.dir/build.make auv_sub_pi/CMakeFiles/Leviathan_PID_Controller.dir/build
+.PHONY : Leviathan_PID_Controller/fast
 
 controller_calib.o: controller_calib.cpp.o
 
@@ -222,62 +222,62 @@ controller_calib.cpp.s:
 	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/controller_calib_node.dir/build.make auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.s
 .PHONY : controller_calib.cpp.s
 
-pi.o: pi.cpp.o
+pid.o: pid.cpp.o
 
-.PHONY : pi.o
-
-# target to build an object file
-pi.cpp.o:
-	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/controller_calib_node.dir/build.make auv_sub_pi/CMakeFiles/controller_calib_node.dir/pi.cpp.o
-	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/Leviathan_PI_Controller.dir/build.make auv_sub_pi/CMakeFiles/Leviathan_PI_Controller.dir/pi.cpp.o
-.PHONY : pi.cpp.o
-
-pi.i: pi.cpp.i
-
-.PHONY : pi.i
-
-# target to preprocess a source file
-pi.cpp.i:
-	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/controller_calib_node.dir/build.make auv_sub_pi/CMakeFiles/controller_calib_node.dir/pi.cpp.i
-	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/Leviathan_PI_Controller.dir/build.make auv_sub_pi/CMakeFiles/Leviathan_PI_Controller.dir/pi.cpp.i
-.PHONY : pi.cpp.i
-
-pi.s: pi.cpp.s
-
-.PHONY : pi.s
-
-# target to generate assembly for a file
-pi.cpp.s:
-	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/controller_calib_node.dir/build.make auv_sub_pi/CMakeFiles/controller_calib_node.dir/pi.cpp.s
-	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/Leviathan_PI_Controller.dir/build.make auv_sub_pi/CMakeFiles/Leviathan_PI_Controller.dir/pi.cpp.s
-.PHONY : pi.cpp.s
-
-pi_loop.o: pi_loop.cpp.o
-
-.PHONY : pi_loop.o
+.PHONY : pid.o
 
 # target to build an object file
-pi_loop.cpp.o:
-	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/Leviathan_PI_Controller.dir/build.make auv_sub_pi/CMakeFiles/Leviathan_PI_Controller.dir/pi_loop.cpp.o
-.PHONY : pi_loop.cpp.o
+pid.cpp.o:
+	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/controller_calib_node.dir/build.make auv_sub_pi/CMakeFiles/controller_calib_node.dir/pid.cpp.o
+	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/Leviathan_PID_Controller.dir/build.make auv_sub_pi/CMakeFiles/Leviathan_PID_Controller.dir/pid.cpp.o
+.PHONY : pid.cpp.o
 
-pi_loop.i: pi_loop.cpp.i
+pid.i: pid.cpp.i
 
-.PHONY : pi_loop.i
+.PHONY : pid.i
 
 # target to preprocess a source file
-pi_loop.cpp.i:
-	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/Leviathan_PI_Controller.dir/build.make auv_sub_pi/CMakeFiles/Leviathan_PI_Controller.dir/pi_loop.cpp.i
-.PHONY : pi_loop.cpp.i
+pid.cpp.i:
+	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/controller_calib_node.dir/build.make auv_sub_pi/CMakeFiles/controller_calib_node.dir/pid.cpp.i
+	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/Leviathan_PID_Controller.dir/build.make auv_sub_pi/CMakeFiles/Leviathan_PID_Controller.dir/pid.cpp.i
+.PHONY : pid.cpp.i
 
-pi_loop.s: pi_loop.cpp.s
+pid.s: pid.cpp.s
 
-.PHONY : pi_loop.s
+.PHONY : pid.s
 
 # target to generate assembly for a file
-pi_loop.cpp.s:
-	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/Leviathan_PI_Controller.dir/build.make auv_sub_pi/CMakeFiles/Leviathan_PI_Controller.dir/pi_loop.cpp.s
-.PHONY : pi_loop.cpp.s
+pid.cpp.s:
+	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/controller_calib_node.dir/build.make auv_sub_pi/CMakeFiles/controller_calib_node.dir/pid.cpp.s
+	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/Leviathan_PID_Controller.dir/build.make auv_sub_pi/CMakeFiles/Leviathan_PID_Controller.dir/pid.cpp.s
+.PHONY : pid.cpp.s
+
+pid_loop.o: pid_loop.cpp.o
+
+.PHONY : pid_loop.o
+
+# target to build an object file
+pid_loop.cpp.o:
+	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/Leviathan_PID_Controller.dir/build.make auv_sub_pi/CMakeFiles/Leviathan_PID_Controller.dir/pid_loop.cpp.o
+.PHONY : pid_loop.cpp.o
+
+pid_loop.i: pid_loop.cpp.i
+
+.PHONY : pid_loop.i
+
+# target to preprocess a source file
+pid_loop.cpp.i:
+	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/Leviathan_PID_Controller.dir/build.make auv_sub_pi/CMakeFiles/Leviathan_PID_Controller.dir/pid_loop.cpp.i
+.PHONY : pid_loop.cpp.i
+
+pid_loop.s: pid_loop.cpp.s
+
+.PHONY : pid_loop.s
+
+# target to generate assembly for a file
+pid_loop.cpp.s:
+	cd /home/nejack/ros_workspace/build && $(MAKE) -f auv_sub_pi/CMakeFiles/Leviathan_PID_Controller.dir/build.make auv_sub_pi/CMakeFiles/Leviathan_PID_Controller.dir/pid_loop.cpp.s
+.PHONY : pid_loop.cpp.s
 
 # Help Target
 help:
@@ -288,21 +288,21 @@ help:
 	@echo "... list_install_components"
 	@echo "... install"
 	@echo "... edit_cache"
-	@echo "... test"
 	@echo "... rebuild_cache"
 	@echo "... controller_calib_node"
-	@echo "... Leviathan_PI_Controller"
+	@echo "... test"
+	@echo "... Leviathan_PID_Controller"
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... controller_calib.o"
 	@echo "... controller_calib.i"
 	@echo "... controller_calib.s"
-	@echo "... pi.o"
-	@echo "... pi.i"
-	@echo "... pi.s"
-	@echo "... pi_loop.o"
-	@echo "... pi_loop.i"
-	@echo "... pi_loop.s"
+	@echo "... pid.o"
+	@echo "... pid.i"
+	@echo "... pid.s"
+	@echo "... pid_loop.o"
+	@echo "... pid_loop.i"
+	@echo "... pid_loop.s"
 .PHONY : help
 
 

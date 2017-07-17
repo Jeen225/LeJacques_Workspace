@@ -81,71 +81,71 @@ auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o.provides:
 auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o.provides.build: auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o
 
 
-auv_sub_pi/CMakeFiles/controller_calib_node.dir/pi.cpp.o: auv_sub_pi/CMakeFiles/controller_calib_node.dir/flags.make
-auv_sub_pi/CMakeFiles/controller_calib_node.dir/pi.cpp.o: /home/nejack/ros_workspace/src/auv_sub_pi/pi.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nejack/ros_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object auv_sub_pi/CMakeFiles/controller_calib_node.dir/pi.cpp.o"
-	cd /home/nejack/ros_workspace/build/auv_sub_pi && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/controller_calib_node.dir/pi.cpp.o -c /home/nejack/ros_workspace/src/auv_sub_pi/pi.cpp
+auv_sub_pi/CMakeFiles/controller_calib_node.dir/pid.cpp.o: auv_sub_pi/CMakeFiles/controller_calib_node.dir/flags.make
+auv_sub_pi/CMakeFiles/controller_calib_node.dir/pid.cpp.o: /home/nejack/ros_workspace/src/auv_sub_pi/pid.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nejack/ros_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object auv_sub_pi/CMakeFiles/controller_calib_node.dir/pid.cpp.o"
+	cd /home/nejack/ros_workspace/build/auv_sub_pi && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/controller_calib_node.dir/pid.cpp.o -c /home/nejack/ros_workspace/src/auv_sub_pi/pid.cpp
 
-auv_sub_pi/CMakeFiles/controller_calib_node.dir/pi.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/controller_calib_node.dir/pi.cpp.i"
-	cd /home/nejack/ros_workspace/build/auv_sub_pi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nejack/ros_workspace/src/auv_sub_pi/pi.cpp > CMakeFiles/controller_calib_node.dir/pi.cpp.i
+auv_sub_pi/CMakeFiles/controller_calib_node.dir/pid.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/controller_calib_node.dir/pid.cpp.i"
+	cd /home/nejack/ros_workspace/build/auv_sub_pi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nejack/ros_workspace/src/auv_sub_pi/pid.cpp > CMakeFiles/controller_calib_node.dir/pid.cpp.i
 
-auv_sub_pi/CMakeFiles/controller_calib_node.dir/pi.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/controller_calib_node.dir/pi.cpp.s"
-	cd /home/nejack/ros_workspace/build/auv_sub_pi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nejack/ros_workspace/src/auv_sub_pi/pi.cpp -o CMakeFiles/controller_calib_node.dir/pi.cpp.s
+auv_sub_pi/CMakeFiles/controller_calib_node.dir/pid.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/controller_calib_node.dir/pid.cpp.s"
+	cd /home/nejack/ros_workspace/build/auv_sub_pi && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nejack/ros_workspace/src/auv_sub_pi/pid.cpp -o CMakeFiles/controller_calib_node.dir/pid.cpp.s
 
-auv_sub_pi/CMakeFiles/controller_calib_node.dir/pi.cpp.o.requires:
+auv_sub_pi/CMakeFiles/controller_calib_node.dir/pid.cpp.o.requires:
 
-.PHONY : auv_sub_pi/CMakeFiles/controller_calib_node.dir/pi.cpp.o.requires
+.PHONY : auv_sub_pi/CMakeFiles/controller_calib_node.dir/pid.cpp.o.requires
 
-auv_sub_pi/CMakeFiles/controller_calib_node.dir/pi.cpp.o.provides: auv_sub_pi/CMakeFiles/controller_calib_node.dir/pi.cpp.o.requires
-	$(MAKE) -f auv_sub_pi/CMakeFiles/controller_calib_node.dir/build.make auv_sub_pi/CMakeFiles/controller_calib_node.dir/pi.cpp.o.provides.build
-.PHONY : auv_sub_pi/CMakeFiles/controller_calib_node.dir/pi.cpp.o.provides
+auv_sub_pi/CMakeFiles/controller_calib_node.dir/pid.cpp.o.provides: auv_sub_pi/CMakeFiles/controller_calib_node.dir/pid.cpp.o.requires
+	$(MAKE) -f auv_sub_pi/CMakeFiles/controller_calib_node.dir/build.make auv_sub_pi/CMakeFiles/controller_calib_node.dir/pid.cpp.o.provides.build
+.PHONY : auv_sub_pi/CMakeFiles/controller_calib_node.dir/pid.cpp.o.provides
 
-auv_sub_pi/CMakeFiles/controller_calib_node.dir/pi.cpp.o.provides.build: auv_sub_pi/CMakeFiles/controller_calib_node.dir/pi.cpp.o
+auv_sub_pi/CMakeFiles/controller_calib_node.dir/pid.cpp.o.provides.build: auv_sub_pi/CMakeFiles/controller_calib_node.dir/pid.cpp.o
 
 
 # Object files for target controller_calib_node
 controller_calib_node_OBJECTS = \
 "CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o" \
-"CMakeFiles/controller_calib_node.dir/pi.cpp.o"
+"CMakeFiles/controller_calib_node.dir/pid.cpp.o"
 
 # External object files for target controller_calib_node
 controller_calib_node_EXTERNAL_OBJECTS =
 
-/home/nejack/ros_workspace/devel/lib/auv_sub_pi/controller_calib_node: auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o
-/home/nejack/ros_workspace/devel/lib/auv_sub_pi/controller_calib_node: auv_sub_pi/CMakeFiles/controller_calib_node.dir/pi.cpp.o
-/home/nejack/ros_workspace/devel/lib/auv_sub_pi/controller_calib_node: auv_sub_pi/CMakeFiles/controller_calib_node.dir/build.make
-/home/nejack/ros_workspace/devel/lib/auv_sub_pi/controller_calib_node: /opt/ros/kinetic/lib/libroscpp.so
-/home/nejack/ros_workspace/devel/lib/auv_sub_pi/controller_calib_node: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/nejack/ros_workspace/devel/lib/auv_sub_pi/controller_calib_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/nejack/ros_workspace/devel/lib/auv_sub_pi/controller_calib_node: /opt/ros/kinetic/lib/librosconsole.so
-/home/nejack/ros_workspace/devel/lib/auv_sub_pi/controller_calib_node: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
-/home/nejack/ros_workspace/devel/lib/auv_sub_pi/controller_calib_node: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
-/home/nejack/ros_workspace/devel/lib/auv_sub_pi/controller_calib_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/nejack/ros_workspace/devel/lib/auv_sub_pi/controller_calib_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/nejack/ros_workspace/devel/lib/auv_sub_pi/controller_calib_node: /opt/ros/kinetic/lib/libxmlrpcpp.so
-/home/nejack/ros_workspace/devel/lib/auv_sub_pi/controller_calib_node: /opt/ros/kinetic/lib/libroscpp_serialization.so
-/home/nejack/ros_workspace/devel/lib/auv_sub_pi/controller_calib_node: /opt/ros/kinetic/lib/librostime.so
-/home/nejack/ros_workspace/devel/lib/auv_sub_pi/controller_calib_node: /opt/ros/kinetic/lib/libcpp_common.so
-/home/nejack/ros_workspace/devel/lib/auv_sub_pi/controller_calib_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/nejack/ros_workspace/devel/lib/auv_sub_pi/controller_calib_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/nejack/ros_workspace/devel/lib/auv_sub_pi/controller_calib_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/nejack/ros_workspace/devel/lib/auv_sub_pi/controller_calib_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/nejack/ros_workspace/devel/lib/auv_sub_pi/controller_calib_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/nejack/ros_workspace/devel/lib/auv_sub_pi/controller_calib_node: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/nejack/ros_workspace/devel/lib/auv_sub_pi/controller_calib_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/nejack/ros_workspace/devel/lib/auv_sub_pi/controller_calib_node: auv_sub_pi/CMakeFiles/controller_calib_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nejack/ros_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/nejack/ros_workspace/devel/lib/auv_sub_pi/controller_calib_node"
+/home/nejack/ros_workspace/devel/lib/auv_sub_pid/controller_calib_node: auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o
+/home/nejack/ros_workspace/devel/lib/auv_sub_pid/controller_calib_node: auv_sub_pi/CMakeFiles/controller_calib_node.dir/pid.cpp.o
+/home/nejack/ros_workspace/devel/lib/auv_sub_pid/controller_calib_node: auv_sub_pi/CMakeFiles/controller_calib_node.dir/build.make
+/home/nejack/ros_workspace/devel/lib/auv_sub_pid/controller_calib_node: /opt/ros/kinetic/lib/libroscpp.so
+/home/nejack/ros_workspace/devel/lib/auv_sub_pid/controller_calib_node: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/nejack/ros_workspace/devel/lib/auv_sub_pid/controller_calib_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/nejack/ros_workspace/devel/lib/auv_sub_pid/controller_calib_node: /opt/ros/kinetic/lib/librosconsole.so
+/home/nejack/ros_workspace/devel/lib/auv_sub_pid/controller_calib_node: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+/home/nejack/ros_workspace/devel/lib/auv_sub_pid/controller_calib_node: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+/home/nejack/ros_workspace/devel/lib/auv_sub_pid/controller_calib_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/nejack/ros_workspace/devel/lib/auv_sub_pid/controller_calib_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/nejack/ros_workspace/devel/lib/auv_sub_pid/controller_calib_node: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/home/nejack/ros_workspace/devel/lib/auv_sub_pid/controller_calib_node: /opt/ros/kinetic/lib/libroscpp_serialization.so
+/home/nejack/ros_workspace/devel/lib/auv_sub_pid/controller_calib_node: /opt/ros/kinetic/lib/librostime.so
+/home/nejack/ros_workspace/devel/lib/auv_sub_pid/controller_calib_node: /opt/ros/kinetic/lib/libcpp_common.so
+/home/nejack/ros_workspace/devel/lib/auv_sub_pid/controller_calib_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/nejack/ros_workspace/devel/lib/auv_sub_pid/controller_calib_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/nejack/ros_workspace/devel/lib/auv_sub_pid/controller_calib_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/nejack/ros_workspace/devel/lib/auv_sub_pid/controller_calib_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/nejack/ros_workspace/devel/lib/auv_sub_pid/controller_calib_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/nejack/ros_workspace/devel/lib/auv_sub_pid/controller_calib_node: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/nejack/ros_workspace/devel/lib/auv_sub_pid/controller_calib_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/nejack/ros_workspace/devel/lib/auv_sub_pid/controller_calib_node: auv_sub_pi/CMakeFiles/controller_calib_node.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nejack/ros_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/nejack/ros_workspace/devel/lib/auv_sub_pid/controller_calib_node"
 	cd /home/nejack/ros_workspace/build/auv_sub_pi && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/controller_calib_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-auv_sub_pi/CMakeFiles/controller_calib_node.dir/build: /home/nejack/ros_workspace/devel/lib/auv_sub_pi/controller_calib_node
+auv_sub_pi/CMakeFiles/controller_calib_node.dir/build: /home/nejack/ros_workspace/devel/lib/auv_sub_pid/controller_calib_node
 
 .PHONY : auv_sub_pi/CMakeFiles/controller_calib_node.dir/build
 
 auv_sub_pi/CMakeFiles/controller_calib_node.dir/requires: auv_sub_pi/CMakeFiles/controller_calib_node.dir/controller_calib.cpp.o.requires
-auv_sub_pi/CMakeFiles/controller_calib_node.dir/requires: auv_sub_pi/CMakeFiles/controller_calib_node.dir/pi.cpp.o.requires
+auv_sub_pi/CMakeFiles/controller_calib_node.dir/requires: auv_sub_pi/CMakeFiles/controller_calib_node.dir/pid.cpp.o.requires
 
 .PHONY : auv_sub_pi/CMakeFiles/controller_calib_node.dir/requires
 
