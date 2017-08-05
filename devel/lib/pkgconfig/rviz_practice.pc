@@ -1,0 +1,8 @@
+prefix=/home/nejack/ros_workspace/devel
+
+Name: rviz_practice
+Description: Description of rviz_practice
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/nejack/ros_workspace/devel/lib 
+Requires: 

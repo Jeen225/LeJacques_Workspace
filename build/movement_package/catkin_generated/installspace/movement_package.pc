@@ -1,0 +1,8 @@
+prefix=/home/nejack/ros_workspace/install
+
+Name: movement_package
+Description: Description of movement_package
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/nejack/ros_workspace/install/lib 
+Requires: 

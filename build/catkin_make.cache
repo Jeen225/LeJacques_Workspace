@@ -1,2 +1,2 @@
-agitr:auv_sub_pi:opencv1:pub_tuto:roomba_iarc:smach_test:sub_tuto:uno_tortuga
+agitr:auv_sub_pi:movement_package:opencv1:pub_tuto:roomba_iarc:rviz_practice:smach_test:sub_tuto:uno_tortuga
 -DCATKIN_DEVEL_PREFIX=/home/nejack/ros_workspace/devel -DCMAKE_INSTALL_PREFIX=/home/nejack/ros_workspace/install -G Unix Makefiles
